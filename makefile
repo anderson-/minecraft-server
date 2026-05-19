@@ -24,6 +24,9 @@ logs:
 console:
 	$(CONSOLE)
 
+test-console:
+	$(COMPOSE) exec minecraft-test rcon-cli
+
 # uso: make whitelist-add NICK=fulano
 whitelist-add:
 	$(CONSOLE) whitelist add $(NICK)
