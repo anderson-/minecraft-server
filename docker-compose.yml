@@ -36,19 +36,21 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: PAPER
-      VERSION: LATEST
+      VERSION: 1.20.1
       MEMORY: "2G"
       TZ: America/Sao_Paulo
       MOTD: "test"
-      MAX_PLAYERS: "3"
+      MAX_PLAYERS: "20"
+      DIFFICULTY: "1"
       SERVER_PORT: "25566"
+      LEVEL_SEED: "2253248897752609366"
 
       # acesso
       ONLINE_MODE: "FALSE"
       ENFORCE_WHITELIST: "TRUE"
 
       # plugins
-      MODRINTH_PROJECTS: "viaversion,viabackwards"
+      MODRINTH_PROJECTS: "worldedit,viaversion,viabackwards"
     volumes:
       - ./data-test:/data
   playit:
