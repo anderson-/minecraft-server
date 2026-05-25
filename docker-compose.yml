@@ -24,7 +24,7 @@ services:
       ENFORCE_WHITELIST: "TRUE"
 
       # plugins
-      MODRINTH_PROJECTS: "worldedit,viaversion,viabackwards,backuper"
+      MODRINTH_PROJECTS: "worldedit,viaversion,viabackwards,backuper,simpledeathchest"
 
     volumes:
       - ./data:/data
