@@ -40,3 +40,8 @@ whitelist-list:
 # uso: make op NICK=fulano
 op:
 	$(CONSOLE) op $(NICK)
+
+test-regen-world:
+	$(COMPOSE) stop minecraft-test
+	rm -rf data-test/world
+	$(COMPOSE) up -d minecraft-test
