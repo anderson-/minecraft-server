@@ -31,6 +31,7 @@ services:
 
     ports:
       - "25565:25565"
+      - "25566:25566"
 
   minecraft-test:
     image: itzg/minecraft-server:latest
@@ -46,7 +47,8 @@ services:
       MAX_PLAYERS: "20"
       DIFFICULTY: "1"
       SERVER_PORT: "25566"
-      LEVEL_SEED: "2253248897752609366"
+      RCON_PORT: "25576"
+      LEVEL_SEED: "128397198237"
 
       # acesso
       ONLINE_MODE: "FALSE"
